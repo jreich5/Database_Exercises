@@ -27,8 +27,8 @@ SELECT '--------------------------' AS 'Info';
 
 SELECT 'Which albums had less than 20 million certified sales' AS 'Info';
 SELECT name 
-FROM albums A
-WHERE sales <= 20000000;
+FROM albums
+WHERE sales < 20000000;
 SELECT '--------------------------' AS 'Info'; 
 
 SELECT 'All the albums in the rock genre.' AS 'Info';

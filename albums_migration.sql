@@ -5,7 +5,7 @@ CREATE TABLE albums (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     artist VARCHAR(150) NOT NULL DEFAULT 'NONE',
     name VARCHAR(100) NOT NULL DEFAULT 'NONE',
-    release_date YEAR(4),
+    release_date INT,
     sales DECIMAL(12,2) NOT NULL DEFAULT 0, 
     genre CHAR(255) NOT NULL DEFAULT 'UNKNOWN',
     PRIMARY KEY (id)
