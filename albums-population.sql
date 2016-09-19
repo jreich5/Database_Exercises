@@ -1,5 +1,5 @@
 USE codeup_test_db;
-TRUNCATE TABLE albums;
+TRUNCATE albums;
 INSERT INTO albums
 (`artist`,
 `name`,
