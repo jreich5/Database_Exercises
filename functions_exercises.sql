@@ -21,6 +21,8 @@ SELECT * FROM employees WHERE last_name NOT LIKE '%qu%'
 AND last_name LIKE '%q%';
 
 
-SELECT * FROM employees WHERE hire_date > '199%'
+SELECT CONCAT(first_name, ' ', last_name, ' ', datediff(now(), hire_date)/365, ' ', 'years') FROM employees 
+WHERE hire_date > '199%'
 AND birth_date LIKE '%12-25'
 ORDER BY birth_date ASC, hire_date DESC; 
+
